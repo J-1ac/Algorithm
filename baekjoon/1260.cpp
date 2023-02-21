@@ -13,6 +13,14 @@ void add_newedge(int v1, int v2, vector<pair<int,int>> &e_list){
     e_list.push_back(newedge);
 }
 
+void dfs(vector<int> &vertics, vector<pair<int,int>> &edges){
+
+}
+
+void bfs(vector<int> &vertics, vector<pair<int,int>> &edges){
+
+}
+
 int main(){
     int n, m, v, vertex1, vertex2;
     vector<int> vertics; vector<pair<int,int>> edges;
@@ -24,11 +32,8 @@ int main(){
         add_newedge(vertex1, vertex2, edges);
     }
 
-    for(auto w: vertics)
-        cout << w << " , ";
-    cout << '\n';    
-    for(auto w: edges)
-        cout << w.first << " , " << w.second << "\n";
+    dfs(vertics, edges);
+    bfs(vertics, edges);
 
     return 0;
 }
