@@ -21,13 +21,11 @@ struct Food{
     int col;
     int distance;
     bool operator <(const Food f) const {
-        int this_distance = abs(this->row - current_shark.first) + abs(this->col - current_shark.second);
-        int f_distance = abs(f.row - current_shark.first) + abs(f.col - current_shark.second);
-        if(this_distance == f_distance){
+        if(this->distance == f.distance){
             if(this->row == f.row) return this->col > f.col;
             return this->row > f.row;
         }
-        return this_distance > f_distance;
+        return this->distance > f.distance;
     }
 };
 
