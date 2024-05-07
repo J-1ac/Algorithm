@@ -29,7 +29,7 @@ struct Food{
     }
 };
 
-// map을 bfs 순회하며, 현재 상어가 먹을 수 있는 먹이 중 가장 가까운 거리에 속하는 먹이들만 foods에 추가
+// map을 BFS 순회하며, 현재 상어가 먹을 수 있는 먹이 중 가장 가까운 거리에 속하는 먹이들만 foods에 추가
 void findFood(priority_queue<Food> &foods, int shark_size, int n){
     queue<array<int, 3>> q; 
     int visited[20][20]{};
