@@ -53,7 +53,7 @@ void cal(int n, int m, queue<pair<int,int>> &q){
             else{
                 myMap[current.first][current.second]=0;
                 airq.push(current);
-            }
+            }   
         }
     }
 }

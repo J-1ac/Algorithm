@@ -2,9 +2,10 @@
 #include <iostream>
 using namespace std;
 
-/* how to solve 
-
+/** how to solve 
+ * 다익스트라
 */
+
 
 int main(){
     int v, e, s;
