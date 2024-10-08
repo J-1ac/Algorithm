@@ -36,12 +36,12 @@ int main(){
             int dist = pq.top().first;
             pq.pop();
 
-            if (u==x){                      // x까지 최단 경로를 구한 경우 break
+            if (u==x){                               // x까지 최단 경로를 구한 경우 break
                 distanceToX[i]=dist;
                 break;
             }
 
-            if (dist > visited[u]) continue; // 더 짧은 경로가 있는 경우 skip
+            if (dist > visited[u]) continue;        // 더 짧은 경로가 있는 경우 skip
 
             for (auto& neighbor : graph[u]) {
                 int v = neighbor.first;
@@ -88,9 +88,6 @@ int main(){
     }
 
     cout << *max_element(distanceSum, distanceSum + n + 1); 
-
-    
-
 
     return 0;
 }
