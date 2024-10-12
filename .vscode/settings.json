@@ -3,6 +3,9 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "vector": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "cmath": "cpp"
     }
 }
