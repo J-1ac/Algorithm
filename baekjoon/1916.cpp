@@ -2,11 +2,13 @@
 using namespace std;
 
 int n, m, s, e, bs, be, c;
-vector<vector<pair<int, int>>> graph;
-vector<int> dist;
+vector<pair<int, int>> graph[1001];
+int dist[1001];
 
 void dijkstra(){
-    dist.assign(n+1, INT_MAX);
+    for (int i = 0; i < 1001; ++i) {
+        dist[i] = INT_MAX;
+    }
     dist[s] = 0;
 
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
@@ -33,7 +35,6 @@ void dijkstra(){
 
 int main(){
     cin >> n >> m;
-    graph.resize(n + 1);
 
     for(int i=0; i<m; i++){
         cin >> bs >> be >> c;
