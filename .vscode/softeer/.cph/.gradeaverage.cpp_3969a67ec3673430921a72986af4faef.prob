@@ -1,0 +1,1 @@
+{"name":"Local: gradeaverage","url":"c:\\Lee\\Algorithm\\.vscode\\softeer\\gradeaverage.cpp","tests":[{"id":1730363751586,"input":"5 3\n10 50 20 70 100\n1 3\n3 4\n1 5","output":"26.67\n45.00\n50.00"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Lee\\Algorithm\\.vscode\\softeer\\gradeaverage.cpp","group":"local","local":true}

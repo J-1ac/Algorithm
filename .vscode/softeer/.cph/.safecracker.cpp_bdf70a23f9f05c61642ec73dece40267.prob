@@ -1,0 +1,1 @@
+{"name":"Local: safecracker","url":"c:\\Lee\\Algorithm\\.vscode\\softeer\\safecracker.cpp","tests":[{"id":1730378765396,"input":"100 2\n90 1\n70 2","output":"170"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Lee\\Algorithm\\.vscode\\softeer\\safecracker.cpp","group":"local","local":true}
