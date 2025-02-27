@@ -43,7 +43,13 @@ public class Main {
         permutation(nums, new ArrayList<>(), visited, n, m);
 
         for (List<Integer> perm : perms) {
-            System.out.println(perm);
+            for (int i = 0; i < perm.size(); i++) {
+                System.out.print(perm.get(i));
+                if (i < perm.size() - 1) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
         }
     }
 }
