@@ -18,6 +18,7 @@ class Node {
 }
 
 class Edge {
+
     int to;
     int weight;
 
@@ -82,7 +83,9 @@ public class Main {
             int node = sc.nextInt();
             while (true) {
                 int connected = sc.nextInt();
-                if (connected == -1) break;
+                if (connected == -1) {
+                    break;
+                }
                 int weight = sc.nextInt();
                 graph.get(node).add(new Edge(connected, weight));
             }
