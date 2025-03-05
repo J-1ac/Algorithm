@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/lee/develop/Algorithm/baekjoon/test'
+relocations:     []
+...
