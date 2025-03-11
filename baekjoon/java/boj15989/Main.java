@@ -3,8 +3,10 @@ package boj15989;
 import java.util.Scanner;
 
 /**
- * dp[n,1] = dp[n-1,1]; dp[n,2] = dp[n-2,1] + dp[n-2,2]; dp[n,3] = dp[n-3,1] + dp[n-3,2] +
- * dp[n-3,3];
+ * n−k 를 만들 때 마지막 수가 k이하 인 모든 방법의 합"
+ * dp[n,1] = dp[n-1,1];
+ * dp[n,2] = dp[n-2,1] + dp[n-2,2];
+ * dp[n,3] = dp[n-3,1] + dp[n-3,2] + dp[n-3,3];
  */
 
 public class Main {
