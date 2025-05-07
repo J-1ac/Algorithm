@@ -10,7 +10,8 @@ public class Main {
         int n = sc.nextInt();
         int k = sc.nextInt();
 
-        int[] x = new int[n], y = new int[n];
+        int[] x = new int[n];
+        int[] y = new int[n];
         for (int i = 0; i < n; i++) {
             x[i] = sc.nextInt();
             y[i] = sc.nextInt();
@@ -26,15 +27,15 @@ public class Main {
         }
 
         int[][] dp = new int[n][k + 1];
-        int INF = 1000000000;
+        int inf = 1000000000;
         for (int i = 0; i < n; i++) {
-            Arrays.fill(dp[i], INF);
+            Arrays.fill(dp[i], inf);
         }
         dp[0][0] = 0;
 
         for (int i = 1; i < n; i++) {
             for (int s = 0; s < i; s++) {
-                int skip = i - s - 1;
+                int skip = i - s - 1;           // s → i 사이에 실제로 건너뛴 개수
                 if (skip > k) {
                     continue;
                 }
@@ -48,7 +49,7 @@ public class Main {
             }
         }
 
-        int ans = INF;
+        int ans = inf;
         for (int used = 0; used <= k; used++) {
             ans = Math.min(ans, dp[n - 1][used]);
         }
